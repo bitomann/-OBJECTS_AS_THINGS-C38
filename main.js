@@ -12,20 +12,33 @@
 const ourPupper = {
     name: "Piper",
     species: "Mut",
+    favoriteToys: [] ,
+    play: function (toy) {
+        if (toy === "Ball" && "Rope") {
+        this.favoriteToys.push(toy)
+        console.log(`${ourPupper.name}, "says YAY!"`)
+        }
+        else {
+            console.log(`${ourPupper.name}, "POOPED!"`)
+        }
+    },
     nicknames: ["Piper Diaper", "Pup Pup"],
     age: 3,
     bark: function (speakToo) {
-        window.alert(`${ourPupper.name} says "WOOF! WOOF!" to ${speakToo}`)
+        // window.alert(`${ourPupper.name} says "WOOF! WOOF!" to ${speakToo}`)
     } ,
     cry: function (sad) {
 console.log(`${ourPupper.name} ${sad} if we don't take him for a walk`)
     },
     pant: function (tired) {
-window.alert(`${ourPupper.nicknames} gets ${tired} after running!`)
+// window.alert(`${ourPupper.nicknames} gets ${tired} after running!`)
     }
 }
  ourPupper.bark("Phoenix, Madeleine, Lili and Mamma")
  ourPupper.cry("is soooo sad")
  ourPupper.pant("so so tired")
+ ourPupper.play("Ball")
+ ourPupper.play("Cat")
+ ourPupper.play("Rope")
 
 
